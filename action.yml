@@ -1,0 +1,14 @@
+name: 'Build latex file'
+description: 'Build latex file to pdf'
+inputs:
+  tex:
+    description: 'Latex file to build'
+    required: true
+outputs:
+  pdf:
+    description: 'Built latex file in pdf format'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.root_file }}
