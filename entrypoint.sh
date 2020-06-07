@@ -4,7 +4,7 @@ set -eo pipefail
 
 ROOT_FILE="$1"
 
-GITHUB_WORKSPACE="${GITHUB_WORKSPACE:-/github/workspace}"
+GITHUB_WORKSPACE="/github/workspace"
 
 OUTPUT_DIR="outputs"
 OUTPUT_PDF=$(basename "$ROOT_FILE")
