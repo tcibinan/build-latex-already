@@ -13,6 +13,9 @@ OUTPUT_PDF="${OUTPUT_PDF%.*}"
 cd "$GITHUB_WORKSPACE"
 mkdir "$OUTPUT_DIR"
 
+echo "$PWD"
+ls -lR ../
+
 pdflatex -output-directory="$OUTPUT_DIR" \
          "$ROOT_FILE"
 
