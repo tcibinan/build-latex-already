@@ -1,4 +1,4 @@
-FROM blang/latex:ctanfull
+FROM aergus/latex:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
