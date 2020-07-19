@@ -17,7 +17,7 @@ fi
 OUTPUT_PDF="$OUTPUT_DIR/${OUTPUT_NAME%.*}.pdf"
 
 cd "$GITHUB_WORKSPACE"
-mkdir "$OUTPUT_DIR"
+mkdir -p "$OUTPUT_DIR"
 
 pdflatex -output-directory="$OUTPUT_DIR" \
          -jobname="$OUTPUT_NAME" \
